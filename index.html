@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Resume</title>
+  <meta name="description" content="Professional resume and portfolio of Your Name: IT Support, Networking, Cybersecurity." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0f172a"/>
+  <!-- Fonts (free) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Your Name",
+    "jobTitle": "IT Support / Junior Cybersecurity",
+    "email": "mailto:you@example.com",
+    "telephone": "+1-555-555-5555",
+    "url": "https://yourusername.github.io/",
+    "sameAs": ["https://www.linkedin.com/in/yourusername","https://github.com/yourusername"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Newark",
+      "addressRegion": "NJ",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header container">
+    <div class="id">
+      <img src="assets/profile.jpg" alt="Headshot of Your Name" class="avatar" />
+      <div>
+        <h1>Your Name</h1>
+        <p class="subtitle">IT Support • Networking • Cybersecurity</p>
+        <p class="links">
+          <a href="mailto:you@example.com">you@example.com</a> · 
+          <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer noopener">LinkedIn</a> ·
+          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer noopener">GitHub</a>
+        </p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      <a class="btn outline" href="#" id="printBtn">Save as PDF</a>
+    </div>
+  </header>
+
+  <nav class="site-nav container" aria-label="Sections">
+    <ul>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certs">Certifications</a></li>
+    </ul>
+  </nav>
+
+  <main id="content" class="container">
+    <section id="summary" class="card">
+      <h2>Professional Summary</h2>
+      <p>Detail-oriented IT student with hands-on experience in help desk, networking, and cybersecurity labs. Strong troubleshooting, customer service, and documentation skills. Seeking an entry-level IT role with growth toward SOC/Cybersecurity.</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Key Skills</h2>
+      <ul class="chips">
+        <li>Windows 10/11</li><li>Linux</li><li>Active Directory</li><li>Networking (TCP/IP, DNS, DHCP)</li>
+        <li>Ticketing (Jira/ServiceNow)</li><li>PowerShell</li><li>Bash</li><li>SIEM Basics</li><li>BitLocker</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <header>
+            <h3>IT Help Desk Intern <span class="muted">— Company Name</span></h3>
+            <span class="meta">Jan 2025 – Present · Newark, NJ</span>
+          </header>
+          <ul>
+            <li>Resolved 25+ weekly tickets (password resets, OS issues, VPN) with 95% CSAT.</li>
+            <li>Imaged laptops with Intune/SCCM; enforced BitLocker and baseline hardening.</li>
+            <li>Documented fixes and added 10 new KB articles to reduce repeat incidents.</li>
+          </ul>
+        </article>
+        <article class="timeline-item">
+          <header>
+            <h3>CBRN Specialist <span class="muted">— National Guard</span></h3>
+            <span class="meta">2023 – Present</span>
+          </header>
+          <ul>
+            <li>Maintained equipment accountability and logs; adhered to strict SOPs.</li>
+            <li>Collaborated in high-pressure environments; excellent discipline and teamwork.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="project">
+          <h3>AI Help Desk Copilot</h3>
+          <p>Built a chatbot that answers Tier‑1 support questions and drafts ticket responses using an open‑source LLM hosted locally.</p>
+          <ul class="tags"><li>Python</li><li>Ollama</li><li>HTML/CSS</li></ul>
+          <a class="btn small" href="#" aria-disabled="true">Demo</a>
+          <a class="btn small outline" href="https://github.com/yourusername/ai-helpdesk" target="_blank" rel="noreferrer noopener">Code</a>
+        </article>
+        <article class="project">
+          <h3>Network Monitor Dashboard</h3>
+          <p>Visualized ping/HTTP checks and summarized logs with a local LLM; alerting via email.</p>
+          <ul class="tags"><li>Node.js</li><li>SQLite</li><li>Charts</li></ul>
+          <a class="btn small outline" href="#" aria-disabled="true">Case Study</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <p><strong>New Jersey Institute of Technology (NJIT)</strong> — B.S. Information Technology (Anticipated 2027)</p>
+    </section>
+
+    <section id="certs" class="card">
+      <h2>Certifications</h2>
+      <ul>
+        <li>CompTIA ITF+ (Active)</li>
+        <li>CompTIA Security+ (In progress - Anticipated Nov 26th, 2025)</li>
+        <li>HAZMAT Operations</li>
+        <li>HAZMAT Awareness</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Your Name — <a href="#" onclick="window.print()">Download PDF</a></p>
+  </footer>
+</body>
+</html>
